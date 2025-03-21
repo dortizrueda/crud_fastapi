@@ -18,3 +18,14 @@ $ fastapi dev src/main.py
 ```
 
 Now to use the API you can go to the documentation page of the api at [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
+
+### To run in Docker
+To build the image run:
+```
+$ docker build -t crud_api_fast:latest .
+```
+
+The to run docker
+```
+$ docker run -p 8000:8000 crud_api_fast
+```
